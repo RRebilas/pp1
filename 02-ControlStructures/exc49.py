@@ -1,4 +1,4 @@
-nr_dnia_Tygodnia = 4
+nr_dnia_Tygodnia = 6
 days = ["PN", "WT", "SR", "CZ", "PT", "SB", "ND"]
 day = 1
 for i in days:
@@ -11,7 +11,8 @@ for i in range(0, 7):
     else:
         print("|    |", end="")
 print()
-for i in range(day, 36-nr_dnia_Tygodnia):
+i = day
+while i <= 30:
     if 31 > i >= 10:
         print(f"| {i} |", end="")
     elif i < 10:
@@ -20,3 +21,4 @@ for i in range(day, 36-nr_dnia_Tygodnia):
         print("|    |", end="")
     if (i + nr_dnia_Tygodnia) % 7 == 0:
         print()
+    i += 1
