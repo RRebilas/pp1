@@ -1,0 +1,8 @@
+arr_num = []
+num = int(input("Podaj liczbę: "))
+while num != 0:
+    arr_num.append(num)
+    num = int(input("Podaj liczbę: "))
+print(f"Liczb =  {len(arr_num)}")
+print(f"Suma = {sum(arr_num)}")
+print(f"Średnia = {int(sum(arr_num)/len(arr_num))}")
