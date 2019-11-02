@@ -1,4 +1,3 @@
-num_array = []
 with open('numbers.txt') as file:
     num_array = [int(i) for i in file]
 num_array.sort()
