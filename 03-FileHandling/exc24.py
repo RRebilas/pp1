@@ -4,7 +4,7 @@ with open("data.csv", 'w') as file:
     file.write('Imie,Nazwisko,Email\n')
     for data in two_dimensional:
         for single_data in data:
-            file.write(f'{single_data}')
+            file.write(single_data)
             if single_data == data[2]:
                 file.write('\n')
             else:
