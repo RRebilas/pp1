@@ -1,0 +1,21 @@
+class TV:
+    def __init__(self):
+        self.isOn = False
+
+    def on(self):
+        self.isOn = True
+
+    def off(self):
+        self.isOn = False
+
+    def show_status(self):
+        message = "Telewizor jest włączony" if self.isOn else "Telewizor jest wyłączony"
+        print(message)
+
+
+tv = TV()
+tv.show_status()
+tv.on()
+tv.show_status()
+tv.off()
+tv.show_status()

@@ -1,8 +1,9 @@
 def graph(jezyki, wartosci):
     for jezyk in jezyki:
-        print(f"\n{jezyk}", end=': ')
+        print('{:>10}'.format(jezyk), end=': ')
         for i in range(wartosci[jezyki.index(jezyk)]):
             print("#", end="")
+        print()
 
 
 jezyki = ['Java', 'Python', 'JavaScript', 'C++', 'C#', 'Ruby', 'Perl', 'PHP', 'C', 'Android']
