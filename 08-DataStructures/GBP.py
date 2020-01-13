@@ -25,3 +25,6 @@ GBP = {
         }
     ]
 }
+
+print("{0:<9} {1:>9}".format("Data", "Kurs"))
+print("=" *18)

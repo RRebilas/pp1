@@ -12,7 +12,7 @@ class EMAIL(exc9.Message):
         line1 = 'Wysyłanie email...\n'
         line2 = "{0:<7} {1}\n".format("Od:", self.from_who)
         line3 = "{0:<7} {1}\n".format("Do:", self.to_who)
-        line4 = "{0:<7} {1}\n".format("Do:", self.subject)
+        line4 = "{0:<7} {1}\n".format("Temat:", self.subject)
         line5 = "{0:<7} {1}\n".format("Treść:", self.message)
         return line1 + line2 + line3 + line4 + line5
 
