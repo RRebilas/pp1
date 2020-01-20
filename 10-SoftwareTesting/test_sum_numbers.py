@@ -27,8 +27,13 @@ class TestSumEven(unittest.TestCase):
         n = 2
         result = sum_even(m,n)
         self.assertEqual(result, 0)
-
-
+    def test_sum_even_forneven(self):
+        # Testuj sumę liczb naturalnych parzystych
+        # z przedziału m,n, gdzie n parzyste
+        m = 7
+        n = 3
+        result = sum_even(m,n)
+        self.assertEqual(result, 0)
 
 if __name__ == '__main__':
     unittest.main()
